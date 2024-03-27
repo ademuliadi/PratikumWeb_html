@@ -3,65 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNDIKNAS</title>
-</head>
-<body>
-    <h1>Universitas Pendidikan Nasional</h1>
-    <span style="font-size: small; color:black; background-color: blue;">Universitas Pendidikan Nasional
-    </span>
-    <p>Universitas Pendidikan Nasional merupakan universitas swasta yang berada di Denpasar</p>
-</body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contoh Tabel HTML</title>
+    <title>Biodata dan Tabel Data Pribadi</title>
     <style>
         table {
-            width: 100%;
+            border: 2px solid black;
             border-collapse: collapse;
+            width: 100%;
         }
+
         th, td {
             border: 1px solid #dddddd;
-            padding: 8px;
             text-align: left;
+            padding: 8px;
         }
+
         th {
             background-color: #f2f2f2;
+        }
+
+        h1.center {
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <h1 class="center">Biodata</h1>
+   <img src="yyyy.jpg" alt="Deskripsi Gambar">
+    <p>Nama: Ade Muliadi</p>
+    <p>Tanggal Lahir: 11 Oktober 2001</p>
+    <p>Alamat: Kec.Melaya, kab.Jembrana </p>
+    <p>Email: ade.muliadi1@gmail.com</p>
 
-<h2>TABEL DATA MAHASISWA</h2>
+    <h1 class="center">Tabel Jenjang Pendidikan</h1>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Pendidikan</th>
+            <th>Nama Sekolah</th>
+            <th>Tahun Lulus</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>TK</td>
+            <td>TK. Dewi Kunti Denpasar</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>SD</td>
+            <td>SDK. Budi Rahayu</td>
+            <td>2014</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>SMP</td>
+          <td>SMP. Wana Murni</td>
+          <td>2017</td>
+        <tr>
+            <td>3</td>
+            <td>SMA</td>
+            <td>SMAN 1 Negara</td>
+            <td>2020</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Kuliah</td>
+          <td>Universitas Pendidikan Nasional</td>
+          <td>Belum Lulus</td>
+      </tr>
+    </table>
+    <title>Formulir Pengiriman Email</title>
+</head>
+<body>
 
-<table>
-  <thead>
-    <tr>
-      <th>NAMA</th>
-      <th>NIM</th>
-      <th>JURUSAN</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Ade Muliadi</td>
-      <td>42230064</td>
-      <td>Teknologi Informasi</td>
-    </tr>
-    <tr>
-      <td>Jerry Liong</td>
-      <td>42230026</td>
-      <td>Teknologi Informasi</td>
-    </tr>
-    <tr>
-      <td>Mahendra</td>
-      <td>42230061</td>
-      <td>Teknologi Informasi</td>
-    </tr>
-  </tbody>
-</table>
+<h2>Kirim Email</h2>
 
+<form action="proses_email.php" method="post">
+    <label for="nama">Nama:</label><br>
+    <input type="text" id="nama" name="nama" required><br><br>
+    <label for="email">Alamat Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="pesan">Pesan:</label><br>
+    <textarea id="pesan" name="pesan" rows="4" required></textarea><br><br>
+    <input type="submit" value="Kirim">
+</form>
+
+</body>
+</html>
 </body>
 </html>
